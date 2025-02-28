@@ -22,8 +22,9 @@
             "valueConstraint": {
                 "valueTemplateRefs": [],
                 "useValuesFrom": [],
-                "valueDataType": "http://id.loc.gov/ontologies/bibframe/Sublocation",
-                "defaults": []
+                "valueDataType": "",
+                "defaults": [],
+                "valueShapeRefs": ["lc:RT:bf2:Sublocation"]
             },
             "mandatory": "false",
             "repeatable": "true",
