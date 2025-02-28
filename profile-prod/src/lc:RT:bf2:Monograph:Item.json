@@ -8,12 +8,12 @@
             "valueConstraint": {
                 "valueTemplateRefs": [],
                 "useValuesFrom": [],
-                "valueDataType": "",
+                "valueDataType": "http://www.w3.org/2001/XMLSchema#string",
                 "defaults": []
             },
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource"
+            "type": "literal"
         },
         {
             "propertyLabel": "Held in sublocation",
@@ -22,18 +22,14 @@
             "valueConstraint": {
                 "valueTemplateRefs": [],
                 "useValuesFrom": [],
-                "valueDataType": "",
+                "valueDataType": "http://www.w3.org/2001/XMLSchema#string",
                 "defaults": []
             },
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource"
+            "type": "literal"
         },
         {
-            "mandatory": [
-                "",
-                "false"
-            ],
             "propertyLabel": "URL of Item",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
             "resourceTemplates": [],
@@ -43,6 +39,7 @@
                 "valueDataType": "",
                 "defaults": []
             },
+            "mandatory": "false",
             "repeatable": "true",
             "type": "resource",
             "remark": "http://access.rdatoolkit.org/4.6.html"
