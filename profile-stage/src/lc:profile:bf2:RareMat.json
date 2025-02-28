@@ -140,25 +140,6 @@
         {
           "mandatory": "false",
           "repeatable": "true",
-          "type": "lookup",
-          "resourceTemplates": [],
-          "valueConstraint": {
-            "valueTemplateRefs": [],
-            "useValuesFrom": [
-              "http://id.loc.gov/authorities/genreForms",
-              "http://id.loc.gov/vocabulary/rbmscv"
-            ],
-            "defaults": [],
-            "valueDataType": {
-              "dataTypeURI": ""
-            }
-          },
-          "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
-          "propertyLabel": "Multi Form/Genre (test)"
-        },
-        {
-          "mandatory": "false",
-          "repeatable": "true",
           "type": "resource",
           "resourceTemplates": [],
           "valueConstraint": {
@@ -176,15 +157,15 @@
         {
           "mandatory": "false",
           "repeatable": "true",
-          "type": "lookup",
+          "type": "resource",
           "resourceTemplates": [],
           "valueConstraint": {
-            "valueTemplateRefs": [],
-            "useValuesFrom": [
-              "http://id.loc.gov/vocabulary/maudience"
+            "valueTemplateRefs": [
+              "lc:RT:bf2:Audience"
             ],
+            "useValuesFrom": [],
             "valueDataType": {
-              "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/IntendedAudience"
+              "dataTypeURI": ""
             },
             "defaults": []
           },
@@ -394,7 +375,7 @@
             "defaults": [],
             "valueDataType": {}
           },
-          "propertyURI": "http://id.loc.gov/ontologies/bibframe/references",
+          "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
           "propertyLabel": "References"
         },
         {
@@ -1010,6 +991,29 @@
       "propertyTemplates": [
         {
           "mandatory": "false",
+          "repeatable": "true",
+          "type": "lookup",
+          "resourceTemplates": [],
+          "valueConstraint": {
+            "valueTemplateRefs": [],
+            "useValuesFrom": [
+              "http://id.loc.gov/vocabulary/relationship"
+            ],
+            "defaults": [
+              {
+                "defaultURI": "http://id.loc.gov/vocabulary/relationship/references",
+                "defaultLiteral": "references"
+              }
+            ],
+            "valueDataType": {
+              "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Relationship"
+            }
+          },
+          "propertyURI": "http://id.loc.gov/ontologies/bibframe/relationship",
+          "propertyLabel": "Relationship"
+        },
+        {
+          "mandatory": "false",
           "repeatable": "false",
           "type": "resource",
           "resourceTemplates": [],
@@ -1031,7 +1035,7 @@
           "resourceTemplates": [],
           "valueConstraint": {
             "valueTemplateRefs": [
-              "lc:RT:bf2:RareMat:RefNote"
+              "lc:RT:bf2:RareMat:RefWorkNote"
             ],
             "useValuesFrom": [],
             "valueDataType": {},
@@ -1058,7 +1062,7 @@
         }
       ],
       "id": "lc:RT:bf2:RareMat:RefWork",
-      "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
+      "resourceURI": "http://id.loc.gov/ontologies/bibframe/Relation",
       "resourceLabel": "References"
     },
     {
@@ -1121,7 +1125,7 @@
           "propertyLabel": "Note type"
         }
       ],
-      "id": "lc:RT:bf2:RareMat:RefNote",
+      "id": "lc:RT:bf2:RareMat:RefWorkNote",
       "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
       "resourceLabel": "References note"
     },
