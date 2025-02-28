@@ -1,0 +1,20 @@
+{
+  "id": "lc:RT:bf2:Sublocation",
+  "resourceURI": "http://id.loc.gov/ontologies/bibframe/Sublocation",
+  "resourceLabel": "Sublocation",
+  "propertyTemplates": [
+    {
+      "propertyLabel": "Sublocation",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "valueDataType": "http://www.w3.org/2001/XMLSchema#string",
+        "defaults": []
+      }
+    }
+  ]
+}
