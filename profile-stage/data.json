@@ -10064,21 +10064,6 @@
                 "propertyLabel": "Immediate source of acquisition note"
               },
               {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "defaults": [],
-                  "valueDataType": {}
-                },
-                "propertyLabel": "Cast/credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html",
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits"
-              },
-              {
                 "propertyLabel": "Media type",
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                 "repeatable": "true",
@@ -10746,7 +10731,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.060Z",
-      "updateDate": "2024-12-06T19:02:24.872Z",
+      "updateDate": "2025-02-28T16:31:09.760Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.060Z",
@@ -12691,21 +12676,6 @@
                 "type": "literal",
                 "resourceTemplates": [],
                 "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "defaults": [],
-                  "valueDataType": {}
-                },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits",
-                "propertyLabel": "Credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html"
-              },
-              {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
                   "valueTemplateRefs": [
                     "lc:RT:bf2:Contents"
                   ],
@@ -13074,21 +13044,6 @@
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/tableOfContents",
                 "propertyLabel": "Contents"
-              },
-              {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "defaults": [],
-                  "valueDataType": {}
-                },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits",
-                "propertyLabel": "Cast/credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html"
               },
               {
                 "mandatory": "false",
@@ -13488,7 +13443,7 @@
     },
     "metadata": {
       "createDate": "2019-06-13T12:32:28.719Z",
-      "updateDate": "2024-12-09T16:25:13.435Z",
+      "updateDate": "2025-02-28T16:37:08.548Z",
       "createUser": null,
       "updateUser": null
     },
@@ -14748,21 +14703,6 @@
               {
                 "mandatory": "false",
                 "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "valueDataType": {},
-                  "defaults": []
-                },
-                "propertyLabel": "Credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html",
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits"
-              },
-              {
-                "mandatory": "false",
-                "repeatable": "true",
                 "type": "resource",
                 "resourceTemplates": [],
                 "valueConstraint": {
@@ -14998,7 +14938,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.061Z",
-      "updateDate": "2024-12-06T20:15:56.217Z",
+      "updateDate": "2025-02-28T16:34:34.195Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.061Z",
@@ -15739,21 +15679,6 @@
               {
                 "mandatory": "false",
                 "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "defaults": [],
-                  "valueDataType": {}
-                },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits",
-                "propertyLabel": "Credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html"
-              },
-              {
-                "mandatory": "false",
-                "repeatable": "true",
                 "type": "lookup",
                 "resourceTemplates": [],
                 "valueConstraint": {
@@ -16045,7 +15970,7 @@
     },
     "metadata": {
       "createDate": "2019-02-28T14:21:01.066Z",
-      "updateDate": "2024-12-06T20:12:11.168Z",
+      "updateDate": "2025-02-28T16:34:04.560Z",
       "createUser": null,
       "updateUser": null
     },
@@ -16817,21 +16742,6 @@
                 "propertyLabel": "Supplementary content URL"
               },
               {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "valueDataType": {},
-                  "defaults": []
-                },
-                "propertyLabel": "Credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html",
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits"
-              },
-              {
                 "propertyLabel": "Media type",
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                 "repeatable": "true",
@@ -17199,7 +17109,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.061Z",
-      "updateDate": "2024-12-06T20:07:41.421Z",
+      "updateDate": "2025-02-28T16:33:33.637Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.061Z",
@@ -17952,21 +17862,6 @@
                 "propertyLabel": "Supplementary content URL"
               },
               {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "valueDataType": {},
-                  "defaults": []
-                },
-                "propertyLabel": "Credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html",
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits"
-              },
-              {
                 "propertyLabel": "Media type",
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                 "repeatable": "true",
@@ -18265,7 +18160,7 @@
     "id": "2bb005e9-e706-4261-b21c-6137d6644584",
     "metadata": {
       "createDate": "2021-09-28T14:32:49.848Z",
-      "updateDate": "2024-12-06T20:02:49.398Z",
+      "updateDate": "2025-02-28T16:33:02.929Z",
       "createUser": null,
       "updateUser": null
     },
@@ -22719,21 +22614,6 @@
                 "propertyLabel": "Contents"
               },
               {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "valueDataType": {},
-                  "defaults": []
-                },
-                "propertyLabel": "Cast/credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html",
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits"
-              },
-              {
                 "propertyLabel": "Media type",
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                 "repeatable": "true",
@@ -23267,7 +23147,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.060Z",
-      "updateDate": "2024-12-06T19:09:02.187Z",
+      "updateDate": "2025-02-28T16:31:59.406Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.060Z",
@@ -30834,8 +30714,8 @@
                   ],
                   "defaults": [
                     {
-                      "defaultURI": "http://id.loc.gov/vocabulary/subjectSchemes/lcac",
-                      "defaultLiteral": "lcac"
+                      "defaultURI": "http://id.loc.gov/vocabulary/subjectSchemes/cyac",
+                      "defaultLiteral": "Children’s and Young Adults’ Cataloging subject headings"
                     }
                   ],
                   "valueDataType": {
@@ -31034,7 +30914,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.062Z",
-      "updateDate": "2025-02-24T20:53:38.791Z",
+      "updateDate": "2025-02-27T17:06:57.452Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.062Z",
@@ -36344,21 +36224,6 @@
                 "propertyLabel": "Contents"
               },
               {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [],
-                  "valueDataType": {},
-                  "defaults": []
-                },
-                "propertyLabel": "Cast/Credits",
-                "remark": "http://original.rdatoolkit.org/2.17.3.5.html",
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/credits"
-              },
-              {
                 "propertyLabel": "Media type",
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                 "repeatable": "true",
@@ -36872,7 +36737,7 @@
     "id": "0545dd4f-0546-4a2a-99e5-b818961f91ae",
     "metadata": {
       "createDate": "2024-06-28T13:58:12.316Z",
-      "updateDate": "2024-12-06T20:30:40.828Z",
+      "updateDate": "2025-02-28T16:35:15.063Z",
       "createUser": null,
       "updateUser": null
     }
