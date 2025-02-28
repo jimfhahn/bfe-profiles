@@ -22,12 +22,12 @@
             "valueConstraint": {
                 "valueTemplateRefs": [],
                 "useValuesFrom": [],
-                "valueDataType": "http://www.w3.org/2001/XMLSchema#string",
+                "valueDataType": "http://id.loc.gov/ontologies/bibframe/Sublocation",
                 "defaults": []
             },
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal"
+            "type": "resource"
         },
         {
             "propertyLabel": "URL of Item",
