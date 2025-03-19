@@ -17,7 +17,25 @@
           },
           "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
           "propertyLabel": "Your cataloger ID (Windows ID)"
+          },
+        {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {
+                "remark": "http://id.loc.gov/ontologies/bibframe/assigner"
+          },
+          "defaults": [{"defaultURI": "http://id.loc.gov/vocabulary/organizations/pu",
+                        "defaultLiteral": "University of Pennsylvania, Van Pelt-Dietrich Library"
+                        }]
         },
+        "propertyURI": "http://id.loc.gov/ontologies/bibframeassigner",
+        "propertyLabel": "Assigner"
+      },
         {
           "mandatory": "true",
           "repeatable": "false",
