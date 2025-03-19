@@ -33,7 +33,7 @@
                         "defaultLiteral": "University of Pennsylvania, Van Pelt-Dietrich Library"
                         }]
         },
-        "propertyURI": "http://id.loc.gov/ontologies/bibframeassigner",
+        "propertyURI": "http://id.loc.gov/ontologies/bibframe/assigner",
         "propertyLabel": "Assigner"
       },
         {
