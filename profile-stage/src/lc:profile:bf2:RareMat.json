@@ -128,7 +128,7 @@
             ],
             "useValuesFrom": [],
             "valueDataType": {
-              "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
+              "dataTypeURI": ""
             },
             "defaults": [],
             "editable": "false"
@@ -372,27 +372,11 @@
               "lc:RT:bf2:RareMat:RefWork"
             ],
             "useValuesFrom": [],
-            "defaults": [],
-            "valueDataType": {}
-          },
-          "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
-          "propertyLabel": "References"
-        },
-        {
-          "mandatory": "false",
-          "repeatable": "true",
-          "type": "resource",
-          "resourceTemplates": [],
-          "valueConstraint": {
-            "valueTemplateRefs": [
-              "lc:RT:bf2:RelWorkLookup"
-            ],
-            "useValuesFrom": [],
             "valueDataType": {},
             "defaults": []
           },
           "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
-          "propertyLabel": "Search related work",
+          "propertyLabel": "References/Related Works",
           "remark": "https://staff.loc.gov/wikis/display/BP2/Marva+cataloging+updates#Marvacatalogingupdates-Hubs(240;X00,X10,X11with$t;X30)"
         },
         {
@@ -1063,18 +1047,21 @@
       ],
       "id": "lc:RT:bf2:RareMat:RefWork",
       "resourceURI": "http://id.loc.gov/ontologies/bibframe/Relation",
-      "resourceLabel": "References"
+      "resourceLabel": "Related Works"
     },
     {
       "propertyTemplates": [
         {
           "mandatory": "false",
           "repeatable": "true",
-          "type": "literal",
+          "type": "lookup",
           "resourceTemplates": [],
           "valueConstraint": {
             "valueTemplateRefs": [],
-            "useValuesFrom": [],
+            "useValuesFrom": [
+              "https://preprod-8088.id.loc.gov/resources/works/",
+              "https://preprod-8088.id.loc.gov/resources/hubs/"
+            ],
             "defaults": [],
             "valueDataType": {}
           },

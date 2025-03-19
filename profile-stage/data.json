@@ -1098,16 +1098,17 @@
               {
                 "mandatory": "false",
                 "repeatable": "true",
-                "type": "lookup",
+                "type": "resource",
                 "resourceTemplates": [],
                 "valueConstraint": {
-                  "valueTemplateRefs": [],
-                  "useValuesFrom": [
-                    "http://id.loc.gov/vocabulary/languages"
+                  "valueTemplateRefs": [
+                    "lc:RT:bf2:Language2"
                   ],
+                  "useValuesFrom": [],
                   "defaults": [],
                   "valueDataType": {
-                    "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
+                    "dataTypeURI": "",
+                    "remark": "http://id.loc.gov/ontologies/bibframe/Language"
                   }
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/language",
@@ -1255,6 +1256,23 @@
                 "resourceTemplates": [],
                 "valueConstraint": {
                   "valueTemplateRefs": [
+                    "lc:RT:bf2:RelWorkLookup"
+                  ],
+                  "useValuesFrom": [],
+                  "valueDataType": {},
+                  "defaults": []
+                },
+                "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
+                "propertyLabel": "Search related work/series",
+                "remark": "https://staff.loc.gov/wikis/display/BP2/Marva+cataloging+updates#Marvacatalogingupdates-Hubs(240;X00,X10,X11with$t;X30)"
+              },
+              {
+                "mandatory": "false",
+                "repeatable": "true",
+                "type": "resource",
+                "resourceTemplates": [],
+                "valueConstraint": {
+                  "valueTemplateRefs": [
                     "lc:RT:bf2:SeriesHub"
                   ],
                   "useValuesFrom": [],
@@ -1265,42 +1283,6 @@
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
                 "propertyLabel": "Input transcribed series",
-                "remark": "https://staff.loc.gov/wikis/display/BP2/Marva+cataloging+updates#Marvacatalogingupdates-Series(490,8XX)"
-              },
-              {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "resource",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [
-                    "lc:RT:bf2:RelWorkLookup"
-                  ],
-                  "useValuesFrom": [],
-                  "valueDataType": {},
-                  "defaults": []
-                },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
-                "propertyLabel": "Search related work",
-                "remark": "https://staff.loc.gov/wikis/display/BP2/Marva+cataloging+updates#Marvacatalogingupdates-Hubs(240;X00,X10,X11with$t;X30)"
-              },
-              {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "resource",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [
-                    "lc:RT:bf2:SeriesHubLookup"
-                  ],
-                  "useValuesFrom": [],
-                  "defaults": [],
-                  "valueDataType": {
-                    "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Relation"
-                  }
-                },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
-                "propertyLabel": "Search series Hub (optional)",
                 "remark": "https://staff.loc.gov/wikis/display/BP2/Marva+cataloging+updates#Marvacatalogingupdates-Series(490,8XX)"
               },
               {
@@ -1877,7 +1859,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.060Z",
-      "updateDate": "2025-02-28T19:25:50.997Z",
+      "updateDate": "2025-03-18T17:58:13.042Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.060Z",
@@ -3372,12 +3354,26 @@
                   }
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/associatedResource",
-                "propertyLabel": "Search related works"
+                "propertyLabel": "Search related works/series"
+              },
+              {
+                "mandatory": "false",
+                "repeatable": "true",
+                "type": "literal",
+                "resourceTemplates": [],
+                "valueConstraint": {
+                  "valueTemplateRefs": [],
+                  "useValuesFrom": [],
+                  "defaults": [],
+                  "valueDataType": {}
+                },
+                "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+                "propertyLabel": "Series enumeration (if applicable)"
               }
             ],
             "id": "lc:RT:bf2:RelWorkLookup",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Relation",
-            "resourceLabel": "Search related work"
+            "resourceLabel": "Search related work/series"
           },
           {
             "propertyTemplates": [
@@ -3561,7 +3557,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.061Z",
-      "updateDate": "2024-12-10T15:47:57.805Z",
+      "updateDate": "2025-03-18T17:52:04.566Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.061Z",
@@ -6688,7 +6684,7 @@
     },
     "metadata": {
       "createDate": "2018-09-26T14:53:15.546Z",
-      "updateDate": "2025-02-28T19:23:56.959Z",
+      "updateDate": "2025-03-04T16:50:50.113Z",
       "createUser": null,
       "updateUser": null
     },
@@ -18302,7 +18298,7 @@
                   ],
                   "useValuesFrom": [],
                   "valueDataType": {
-                    "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
+                    "dataTypeURI": ""
                   },
                   "defaults": [],
                   "editable": "false"
@@ -18546,27 +18542,11 @@
                     "lc:RT:bf2:RareMat:RefWork"
                   ],
                   "useValuesFrom": [],
-                  "defaults": [],
-                  "valueDataType": {}
-                },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
-                "propertyLabel": "References"
-              },
-              {
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "resource",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                  "valueTemplateRefs": [
-                    "lc:RT:bf2:RelWorkLookup"
-                  ],
-                  "useValuesFrom": [],
                   "valueDataType": {},
                   "defaults": []
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/relation",
-                "propertyLabel": "Search related work",
+                "propertyLabel": "References/Related Works",
                 "remark": "https://staff.loc.gov/wikis/display/BP2/Marva+cataloging+updates#Marvacatalogingupdates-Hubs(240;X00,X10,X11with$t;X30)"
               },
               {
@@ -19237,18 +19217,21 @@
             ],
             "id": "lc:RT:bf2:RareMat:RefWork",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Relation",
-            "resourceLabel": "References"
+            "resourceLabel": "Related Works"
           },
           {
             "propertyTemplates": [
               {
                 "mandatory": "false",
                 "repeatable": "true",
-                "type": "literal",
+                "type": "lookup",
                 "resourceTemplates": [],
                 "valueConstraint": {
                   "valueTemplateRefs": [],
-                  "useValuesFrom": [],
+                  "useValuesFrom": [
+                    "https://preprod-8088.id.loc.gov/resources/works/",
+                    "https://preprod-8088.id.loc.gov/resources/hubs/"
+                  ],
                   "defaults": [],
                   "valueDataType": {}
                 },
@@ -19424,7 +19407,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.061Z",
-      "updateDate": "2025-02-28T19:32:12.616Z",
+      "updateDate": "2025-03-12T19:07:17.786Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.061Z",
@@ -27958,23 +27941,27 @@
                   "defaults": [],
                   "validatePattern": ""
                 },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/Language",
+                "propertyURI": "http://www.w3.org/2002/07/owl#sameAs",
                 "propertyLabel": "Language code",
                 "remark": ""
               },
               {
                 "mandatory": "false",
                 "repeatable": "true",
-                "type": "literal",
+                "type": "lookup",
                 "resourceTemplates": [],
                 "valueConstraint": {
                   "valueTemplateRefs": [],
-                  "useValuesFrom": [],
+                  "useValuesFrom": [
+                    "http://id.loc.gov/vocabulary/languageschemes"
+                  ],
                   "defaults": [],
-                  "valueDataType": {}
+                  "valueDataType": {
+                    "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Source"
+                  }
                 },
-                "propertyURI": "http://id.loc.gov/ontologies/bibframe/part",
-                "propertyLabel": "Part"
+                "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+                "propertyLabel": "Source of language code"
               }
             ],
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Language",
@@ -28017,6 +28004,24 @@
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/language",
                 "propertyLabel": "Language code"
+              },
+              {
+                "mandatory": "false",
+                "repeatable": "true",
+                "type": "lookup",
+                "resourceTemplates": [],
+                "valueConstraint": {
+                  "valueTemplateRefs": [],
+                  "useValuesFrom": [
+                    "http://id.loc.gov/vocabulary/languageschemes"
+                  ],
+                  "defaults": [],
+                  "valueDataType": {
+                    "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Source"
+                  }
+                },
+                "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+                "propertyLabel": "Source of language code"
               }
             ],
             "id": "lc:RT:bf2:LangResource",
@@ -28063,6 +28068,24 @@
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/language",
                 "propertyLabel": "Language code"
+              },
+              {
+                "mandatory": "false",
+                "repeatable": "true",
+                "type": "lookup",
+                "resourceTemplates": [],
+                "valueConstraint": {
+                  "valueTemplateRefs": [],
+                  "useValuesFrom": [
+                    "http://id.loc.gov/vocabulary/languageschemes"
+                  ],
+                  "defaults": [],
+                  "valueDataType": {
+                    "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Source"
+                  }
+                },
+                "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+                "propertyLabel": "Source of language code"
               }
             ],
             "id": "lc:RT:bf2:LangNote",
@@ -28080,7 +28103,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.059Z",
-      "updateDate": "2024-12-11T20:31:13.002Z",
+      "updateDate": "2025-03-11T19:51:24.568Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.059Z",
@@ -30669,20 +30692,19 @@
                 "valueConstraint": {
                   "valueTemplateRefs": [],
                   "useValuesFrom": [
-                    "https://id.loc.gov/resources/hubs",
-                    "https://preprod-8230.id.loc.gov/resources/hubs/"
+                    "https://preprod-8080.id.loc.gov/resources/hubs/"
                   ],
                   "defaults": [],
                   "valueDataType": {}
                 },
-                "propertyLabel": "Search Works and Hubs",
+                "propertyLabel": "Search Hubs",
                 "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                 "remark": "A human-readable name for the subject."
               }
             ],
             "id": "lc:RT:bf2:Topic:SubjectWork",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
-            "resourceLabel": "Work as subject",
+            "resourceLabel": "Hub as subject",
             "author": "NDMSO"
           },
           {
@@ -30918,7 +30940,7 @@
     },
     "metadata": {
       "createDate": "2018-09-01T00:30:21.062Z",
-      "updateDate": "2025-02-27T17:06:57.452Z",
+      "updateDate": "2025-03-18T16:34:20.573Z",
       "updateUser": null
     },
     "created": "2018-09-01T00:30:21.062Z",
